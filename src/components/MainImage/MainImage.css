@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.main-image-container {
+  background-color: #fee7d7;
+  height: 100vh;
+}
+.main-image-circle-outer {
+  margin: 20px 0;
+  position: relative;
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 20px rgb(240, 210, 210);
+}
+.main-image-circle-inner {
+  background-color: white;
+  height: 180px;
+  width: 180px;
+  border-radius: 100%;
+  border: 1px solid gainsboro;
+}
+.main-image-happy {
+  font-family: "Poppins", serif;
+  color: #c90640;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.main-image-day {
+  font-family: "Amatic SC", serif;
+  color: #c90640;
+  font-size: 4.5rem;
+  text-align: center;
+  line-height: 40px;
+}
+.heart {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  filter: none;
+  transition: filter 0.2s linear;
+}
+.heart:hover {
+  filter: drop-shadow(0 0 10px rgb(255, 89, 89));
+  transition: filter 0.2s linear;
+}
+#heart1 {
+  top: 50%;
+  transform: translateY(-100px);
+  left: -10px;
+}
+#heart2 {
+  top: 50%;
+  transform: translateY(-50%);
+  left: -40px;
+}
+#heart3 {
+  top: 50%;
+  transform: translateY(30px);
+  left: -10px;
+}
+#heart4 {
+  top: 50%;
+  transform: translateY(-100px);
+  right: -10px;
+}
+#heart5 {
+  top: 50%;
+  transform: translateY(-50%);
+  right: -40px;
+}
+#heart6 {
+  top: 50%;
+  transform: translateY(30px);
+  right: -10px;
+}
