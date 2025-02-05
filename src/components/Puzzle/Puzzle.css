@@ -1,0 +1,12 @@
+.puzzle-container {
+  background-color: pink;
+  border: 2px solid var(--main-text);
+  margin: 10px;
+  max-width: 600px;
+  max-height: 600px;
+}
+.congrats-out {
+  background-color: antiquewhite;
+  padding: 30px 20px;
+  border-radius: 10px;
+}

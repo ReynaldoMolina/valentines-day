@@ -73,8 +73,3 @@
   transform: translateY(30px);
   right: -10px;
 }
-.main-image-p {
-  margin-top: 10px;
-  color: var(--main-text);
-  font-size: 1.1rem;
-}

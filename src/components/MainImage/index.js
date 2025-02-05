@@ -11,7 +11,7 @@ function MainImage() {
         <div className="flx flx-center main-image-circle-outer">
           <div className="flx flx-col main-image-hearts">
             <SvgHeart className="heart" id="heart1" onClick={() => setMenuOption("Map")}/>
-            <SvgHeart className="heart" id="heart2"/>
+            <SvgHeart className="heart" id="heart2" onClick={() => setMenuOption("Puzzle")}/>
             <SvgHeart className="heart" id="heart3"/>
           </div>
   
@@ -28,8 +28,8 @@ function MainImage() {
           </div>
         </div>
       </div>
-      <p className="main-image-p">Cada corazón es un detalle</p>
-      <p className="main-image-p">Puedes dar click</p>
+      <p className="instructions">Cada ❤️ es un detalle</p>
+      <p className="instructions">Puedes dar click</p>
     </div>
   );
 }

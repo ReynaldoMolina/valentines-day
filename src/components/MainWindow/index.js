@@ -4,6 +4,7 @@ import { APIProvider } from "@vis.gl/react-google-maps";
 import { MainImage } from '../MainImage';
 import { IconBack } from '../IconBack';
 import { CustomMap } from '../CustomMap';
+import { Puzzle } from "../Puzzle";
 
 const apiKey = process.env.REACT_APP_API_KEY;
 const components = {
@@ -12,7 +13,8 @@ const components = {
     <APIProvider apiKey={apiKey}>
       <CustomMap/>
     </APIProvider>
-  )
+  ),
+  "Puzzle": () => <Puzzle/>,
 };
 
 function MainWindow() {
