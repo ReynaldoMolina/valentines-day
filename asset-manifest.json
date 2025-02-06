@@ -1,17 +1,25 @@
 {
   "files": {
-    "main.css": "/valentines-day/static/css/main.2cd90393.css",
-    "main.js": "/valentines-day/static/js/main.a2bea919.js",
-    "static/js/488.b46a2596.chunk.js": "/valentines-day/static/js/488.b46a2596.chunk.js",
+    "main.css": "/valentines-day/static/css/main.36f39849.css",
+    "main.js": "/valentines-day/static/js/main.37ce2a39.js",
+    "static/js/568.4241311d.chunk.js": "/valentines-day/static/js/568.4241311d.chunk.js",
+    "static/media/puzzle4.jpg": "/valentines-day/static/media/puzzle4.2206f0933e04f947c48d.jpg",
+    "static/media/puzzle6.jpg": "/valentines-day/static/media/puzzle6.c18aaee8466f1241133c.jpg",
+    "static/media/puzzle3.jpg": "/valentines-day/static/media/puzzle3.b862173abc3027371c7d.jpg",
+    "static/media/puzzle7.jpg": "/valentines-day/static/media/puzzle7.714972b1c08ab84a41d3.jpg",
+    "static/media/puzzle1.jpg": "/valentines-day/static/media/puzzle1.9edc111c3f9086d11369.jpg",
+    "static/media/puzzle5.jpg": "/valentines-day/static/media/puzzle5.1961a3abc383259ad948.jpg",
+    "static/media/puzzle2.jpg": "/valentines-day/static/media/puzzle2.8526a39ff5a2fcbb74ca.jpg",
     "static/media/heart.svg": "/valentines-day/static/media/heart.f10f8ffb95d4c91fe0430038e826dd5d.svg",
+    "static/media/reload.svg": "/valentines-day/static/media/reload.355f64ad76d240144209f83ded3d9167.svg",
     "static/media/back.svg": "/valentines-day/static/media/back.05ac25ff84d67f5e02af09fd816f834c.svg",
     "index.html": "/valentines-day/index.html",
-    "main.2cd90393.css.map": "/valentines-day/static/css/main.2cd90393.css.map",
-    "main.a2bea919.js.map": "/valentines-day/static/js/main.a2bea919.js.map",
-    "488.b46a2596.chunk.js.map": "/valentines-day/static/js/488.b46a2596.chunk.js.map"
+    "main.36f39849.css.map": "/valentines-day/static/css/main.36f39849.css.map",
+    "main.37ce2a39.js.map": "/valentines-day/static/js/main.37ce2a39.js.map",
+    "568.4241311d.chunk.js.map": "/valentines-day/static/js/568.4241311d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2cd90393.css",
-    "static/js/main.a2bea919.js"
+    "static/css/main.36f39849.css",
+    "static/js/main.37ce2a39.js"
   ]
 }
