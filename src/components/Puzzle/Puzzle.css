@@ -5,8 +5,22 @@
   max-width: 600px;
   max-height: 600px;
 }
+.reload-container {
+  margin: 0 10px;
+  justify-content: end;
+}
+.reload-icon {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(228, 146, 146);
+  border-radius: 5px;
+  padding: 3px;
+  margin-right: 5px;
+  cursor: pointer;
+}
 .congrats-out {
   background-color: antiquewhite;
-  padding: 30px 20px;
+  padding: 20px 10px;
   border-radius: 10px;
+  max-width: 200px;
 }

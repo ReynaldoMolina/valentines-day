@@ -12,7 +12,7 @@ function MainImage() {
           <div className="flx flx-col main-image-hearts">
             <SvgHeart className="heart" id="heart1" onClick={() => setMenuOption("Map")}/>
             <SvgHeart className="heart" id="heart2" onClick={() => setMenuOption("Puzzle")}/>
-            <SvgHeart className="heart" id="heart3"/>
+            <SvgHeart className="heart" id="heart3" onClick={() => setMenuOption("Timer")}/>
           </div>
   
           <div className="flx flx-col flx-center main-image-circle-inner">

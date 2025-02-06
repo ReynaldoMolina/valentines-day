@@ -1,6 +1,7 @@
 import React from "react";
 import { JigsawPuzzle } from "react-jigsaw-puzzle";
 import "react-jigsaw-puzzle/lib/jigsaw-puzzle.css";
+import { ReactComponent as SvgReload } from "./reload.svg";
 import img1 from "./puzzle1.jpg";
 import img2 from "./puzzle2.jpg";
 import img3 from "./puzzle3.jpg";
@@ -23,12 +24,26 @@ function Puzzle() {
   const [openModal, setOpenModal] = React.useState(false);
   const [index, setIndex] = React.useState(randomOut);
   const images = [img1, img2, img3, img4, img5, img6, img7];
+  const messages = [
+    "Siempre seguí adelante mi amor",
+    "Y vas a ver que vas a salir victoriosa de todo",
+    "Vos con el amor de tu vida",
+    "Las flores favoritas del amor de mi vida",
+    "Yo creo en vos",
+    "Seguí intentado, ya va a llegar",
+    "Las otras flores favoritas del amor de mi vida"
+  ];
 
   return (
     <>
       <h1 className="title">Resuelve el puzzle</h1>
       <p className="instructions">Tip: si no puedes mover la pieza, quiere decir que está en su lugar</p>
       <p className="instructions">(Vuelve a entrar para descubrir más, son 7 imágenes)</p>
+      <div className="flx reload-container">
+        <SvgReload
+          className="reload-icon"
+          onClick={() => setIndex(randomIndex())}/>
+      </div>
       <div className="puzzle-container">
         <JigsawPuzzle
           imageSrc={images[index]}
@@ -45,7 +60,7 @@ function Puzzle() {
         >
           <div className="flx flx-center congrats-out">
             <div className="flx flx-col flx-center congrats">
-              <h1 className="title">Lo has resuelto</h1>
+              <p className="title">{messages[index]}</p>
             </div>
           </div>
         </div>
