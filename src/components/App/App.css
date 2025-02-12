@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 :root {
   --background: #fee7d7;
   --main-text: #c90640;
@@ -12,18 +15,23 @@
 html {
   font-size: 62.5%;
 }
-a, p, span, label {
-  color: black;
-  font-size: 1.4rem;
+a, p, span, label, h1 {
+  color: var(--main-text);
   text-decoration: none;
+}
+a, p, span, label {
+  font-family: "ABeeZee", serif;
+  font-size: 1.1rem;
 }
 span {
   cursor: default;
 }
 h1 {
-  font-size: 1.7rem;
+  font-size: 2.2rem;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
 }
-  /*Flex and directions*/
+/*Flex and directions*/
 .flx {
   display: flex;
 }
@@ -46,14 +54,11 @@ h1 {
 }
 .title {
   text-align: center;
-  color: var(--main-text);
   margin: 10px 20px 10px;
 }
 .instructions {
   text-align: center;
-  color: var(--main-text);
   margin: 0 20px 10px;
-  font-size: 1.1rem;
 }
 .hidden {
   display: none;

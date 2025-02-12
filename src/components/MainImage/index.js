@@ -22,9 +22,9 @@ function MainImage() {
           </div>
   
           <div className="flx flx-col main-image-hearts">
-            <SvgHeart className="heart" id="heart4"/>
-            <SvgHeart className="heart" id="heart5"/>
-            <SvgHeart className="heart" id="heart6"/>
+            <SvgHeart className="heart" id="heart4" onClick={() => setMenuOption("Letter")}/>
+            <SvgHeart className="heart" id="heart5" onClick={() => setMenuOption("Letter2")}/>
+            <SvgHeart className="heart" id="heart6" onClick={() => setMenuOption("Message")}/>
           </div>
         </div>
       </div>

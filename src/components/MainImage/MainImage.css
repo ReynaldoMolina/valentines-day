@@ -10,7 +10,7 @@
   height: 200px;
   width: 200px;
   border-radius: 100%;
-  box-shadow: 0px 0px 20px rgb(240, 210, 210);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 .main-image-circle-inner {
   background-color: white;
@@ -36,40 +36,50 @@
   position: absolute;
   height: 60px;
   width: 60px;
-  filter: none;
-  transition: filter 0.1s linear;
+  filter: none; 
+  transition: filter 2s linear;
 }
 .heart:hover {
-  filter: drop-shadow(0 0 10px rgb(221, 76, 76));
   transition: filter 0.1s linear;
 }
 #heart1 {
   top: 50%;
   transform: translateY(-100px);
   left: -10px;
+  animation: glow 2s linear infinite;
 }
 #heart2 {
   top: 50%;
   transform: translateY(-50%);
   left: -40px;
+  animation: glow 2s linear infinite 0.3s;
 }
 #heart3 {
   top: 50%;
   transform: translateY(30px);
   left: -10px;
+  animation: glow 2s linear infinite 0.6s;
 }
 #heart4 {
   top: 50%;
   transform: translateY(-100px);
   right: -10px;
+  animation: glow 2s linear infinite 1.5s;
 }
 #heart5 {
   top: 50%;
   transform: translateY(-50%);
   right: -40px;
+  animation: glow 2s linear infinite 1.2s;
 }
 #heart6 {
   top: 50%;
   transform: translateY(30px);
   right: -10px;
+  animation: glow 2s linear infinite 0.9s;
+}
+
+@keyframes glow {
+  0% {filter: none;}
+  50% {filter: drop-shadow(0 0 10px rgb(168, 41, 41));}
 }

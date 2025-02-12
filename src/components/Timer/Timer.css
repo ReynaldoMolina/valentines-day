@@ -1,0 +1,38 @@
+.timer-container {
+  height: 100%;
+  padding: 0 10px;
+}
+.timer-heart {
+  margin-bottom: 10px;
+}
+.timer-title {
+  text-align: center;
+}
+.timer-box {
+  border: 5px solid white;
+  margin: 30px 10px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  justify-content: space-evenly;
+  max-width: 400px;
+}
+.timer-unit {
+  width: 100%;
+}
+.timer-number {
+  margin-bottom: 5px;
+  font-size: 2.5rem;
+}
+.timer-label {
+  font-size: 1rem;
+  font-style: italic;
+}
+.timer-p {
+  font-size: 1.4rem;
+}
+.timer-face {
+  font-size: 1.8rem;
+  margin-top: 10px;
+}

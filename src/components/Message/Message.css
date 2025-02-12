@@ -1,0 +1,25 @@
+.message-container {
+  height: 100%;
+}
+.message-p {
+  text-align: center;
+  line-height: 2rem;
+}
+.message-heart {
+  height: 50px;
+}
+.message-heart-svg {
+  animation: grow2 4s infinite ease;
+  height: 40px;
+  width: 40px;
+}
+@keyframes grow2 {
+  0% {
+    height: 40px;
+    width: 40px;
+  }
+  50% {
+    height: 45px;
+    width: 45px;
+  }
+}

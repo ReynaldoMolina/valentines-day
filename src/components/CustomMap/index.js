@@ -38,9 +38,9 @@ function CustomMap() {
 
   return (
     <>
-      <h1 className="title">Lugares importantes de nuestra relación 💞</h1>
+      <h1 className="title map-title">Lugares importantes de nuestra relación</h1>
       <p className="instructions">Si no ves el 📍 amplía la vista para que se vea toda la ciudad</p>
-      <div className={`flx map-markers ${openModal && "blur"}`}>
+      <div className="flx map-markers">
         {markers.map(e => (
           <button
             key={e.id}
@@ -56,7 +56,7 @@ function CustomMap() {
         </button>
       </div>
 
-      <div className={`flx flx-col flx-center map-container ${openModal && "blur"}`}>
+      <div className="flx flx-col flx-center map-container">
         <Map
           defaultZoom={13}
           defaultCenter={marker}
@@ -73,7 +73,7 @@ function CustomMap() {
         >
           <div className="flx flx-center favorite-place-out">
             <div className="flx flx-col flx-center favorite-place">
-              <h1 className="favorite-place-h">Mi lugar favorito es a tu lado 🙈</h1>
+              <p className="favorite-place-h">Mi lugar favorito es a tu lado 🙈</p>
               <SvgHeart className="favorite-heart"/>
             </div>
           </div>

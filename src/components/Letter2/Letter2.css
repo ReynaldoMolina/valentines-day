@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+#open {
+  display: none;
+}
+
+.valentines-day-card2-container {
+  height: 100%;
+}
+.valentines-day-card2 {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  transform-style: preserve-3d;
+	transform: perspective(2500px);
+  transition: .3s;
+}
+
+.card-front {
+  position: relative;
+  background-color: #fff0f3;
+  width: 250px;
+  height: 250px;
+  transform-origin: left;
+  box-shadow: inset 100px 20px 100px rgba(0,0,0,.15), 30px 0 50px rgba(0,0,0,0.3);
+  transition: .3s;
+}
+
+.card-front:before {
+  content:"";
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  background-color: #d04e4e;
+  top: 10px;
+  left: 10px;
+}
+
+.card-inside {
+  position: absolute;
+  background-color: #fff0f3;
+  width: 250px;
+  height: 250px;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  box-shadow: inset 100px 20px 100px rgba(0,0,0,0.22), 100px 20px 100px rgba(0,0,0,0.1);
+}
+
+.open {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  z-index: 6;
+  cursor: pointer;
+}
+
+#open:checked ~ .card-front {
+  transform: rotateY(-155deg);
+  box-shadow: inset 100px 20px 100px rgba(0,0,0,.13), 30px 0 50px rgba(0,0,0,0.1);
+}
+
+#open:checked ~ .card-front:before {
+  z-index: 5;
+  background-color: #fff0f3;
+  width: 250px;
+  height:250px;
+  top: 0;
+  left: 0;
+  box-shadow: inset 100px 20px 100px rgba(0,0,0,.1), 30px 0 50px rgba(0,0,0,0.1);
+}
+
+.note {
+  position: relative;
+  width: 170px;
+  height: 120px;
+  background-color: #fff0f3;
+  top: 70px;
+  left: 40px;
+  color: #333;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  text-align: center;
+  filter: drop-shadow(0 0 20px rgba(0,0,0,0.3));
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.note:before, .note:after {
+  position: absolute;
+  content:"";
+  background-color: #ff5a5a;
+  width: 25px;
+  height: 25px;
+}
+
+.note:before {
+  transform: rotate(-45deg);
+  top: -12px;
+  left: 73px;
+}
+
+.note:after {
+  border-radius: 50%;
+  top: -21px;
+  left: 64px;
+  box-shadow: 18px 0 #ff5a5a;
+}
+
+.text-one {
+  position: absolute;
+  color: #333;
+  font-size: 2.5rem;
+  top: 30px;
+  width: 250px;
+  text-align: center;
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.text-one:before, .text-one:after {
+  position: absolute;
+  left: 5px;
+  text-align: center;
+  width: 250px;
+}
+
+.text-one:before {
+  content: "día de los";
+  top: 30px;
+  color: #d04e4e;
+}
+
+.text-one:after {
+  content: "enamorados!";
+  top: 60px;
+}
+
+.heart2 {
+  position: relative;
+  background-color: #d04e4e;
+  height: 50px;
+  width: 50px;
+  top: 170px;
+  left: 100px;
+  transform: rotate(-45deg);
+  animation: 1s beat infinite;
+}
+  
+.heart2:before, .heart2:after {
+  content:"";
+  background-color: #d04e4e;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  }
+  
+.heart2:before {
+  top: -27px;
+  left: 0;
+}
+  
+.heart2:after {
+  left: 27px;
+  top: 0;
+}
+
+.smile {
+  position: absolute;
+  width: 30px;
+  height: 15px;
+  background-color: #333;
+  z-index: 1;
+  border-radius: 0 0 100px 100px;
+  top: 190px;
+  left: 111px;
+  overflow: hidden;
+}
+
+.smile:before {
+  content:"";
+  position: absolute;
+  border-radius:50%;
+  width:20px;
+  height:20px;
+  background-color: #030202;
+  top:5px;
+  left:5px;
+}
+
+.eyes {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #333;
+  width: 10px;
+  height: 10px;
+  z-index: 1;
+  top: 175px;
+  left: 141px;
+  box-shadow: -40px 0 #333;
+  transform-origin: 50%;
+  animation: close 2s infinite;
+}
+
+@keyframes close {
+    0%, 100% {
+        transform: scale(1, .05);
+    }
+    5%, 95% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes beat {
+  0%, 40%, 100% {
+    transform: scale(1) rotate(-45deg);
+  }
+  25%, 60% {
+    transform: scale(1.1) rotate(-45deg);
+  }
+}

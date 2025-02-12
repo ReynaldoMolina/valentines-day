@@ -6,8 +6,8 @@ import "./IconBack.css";
 function IconBack() {
   const { menuOption, setMenuOption } = React.useContext(OptionContext);
   return (
-    <div className="flx">
-      <SvgBack className={`flx icon-back ${menuOption === "Menu" && "hidden"}`} onClick={() => setMenuOption("Menu")}/>
+    <div className={`flx ${menuOption === "Menu" && "hidden"}`}>
+      <SvgBack className="flx icon-back" onClick={() => setMenuOption("Menu")}/>
     </div>
   );
 }

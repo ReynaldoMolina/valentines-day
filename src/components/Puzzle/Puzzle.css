@@ -1,26 +1,36 @@
 .puzzle-container {
   background-color: pink;
-  border: 2px solid var(--main-text);
+  border: 5px solid white;
   margin: 10px;
   max-width: 600px;
   max-height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .reload-container {
   margin: 0 10px;
-  justify-content: end;
+  justify-content: center;
 }
 .reload-icon {
-  width: 30px;
-  height: 30px;
-  background-color: rgb(228, 146, 146);
+  height: 40px;
+  width: 40px;
+  padding: 8px;
+  background-color: rgb(228, 170, 170);
   border-radius: 5px;
-  padding: 3px;
   margin-right: 5px;
   cursor: pointer;
 }
 .congrats-out {
-  background-color: antiquewhite;
-  padding: 20px 10px;
+  background-color: rgb(250, 215, 215);
+  padding: 10px;
   border-radius: 10px;
   max-width: 200px;
+}
+.congrats {
+  padding: 5px;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+.jigsaw-puzzle__piece.jigsaw-puzzle__piece--solved {
+  border-color: rgba(0, 0, 0, 0.4);
 }

@@ -6,6 +6,9 @@ import { IconBack } from '../IconBack';
 import { CustomMap } from '../CustomMap';
 import { Puzzle } from "../Puzzle";
 import { Timer } from "../Timer";
+import { Letter } from "../Letter";
+import { Letter2 } from "../Letter2";
+import { Message } from "../Message";
 
 const apiKey = process.env.REACT_APP_API_KEY;
 const components = {
@@ -16,7 +19,10 @@ const components = {
     </APIProvider>
   ),
   "Puzzle": () => <Puzzle/>,
-  "Timer": () => <Timer/>
+  "Timer": () => <Timer/>,
+  "Letter": () => <Letter/>,
+  "Letter2": () => <Letter2/>,
+  "Message": () => <Message/>
 };
 
 function MainWindow() {
